@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "backwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -15,5 +16,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    qApp->exit();
+    this->close();
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    b.show();
 }
