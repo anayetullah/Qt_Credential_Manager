@@ -12,3 +12,8 @@ BackWindow::~BackWindow()
 {
     delete ui;
 }
+
+void BackWindow::on_pushButton_4_clicked()
+{
+    qApp->exit();
+}

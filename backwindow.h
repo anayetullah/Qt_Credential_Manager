@@ -15,6 +15,9 @@ public:
     explicit BackWindow(QWidget *parent = 0);
     ~BackWindow();
 
+private slots:
+    void on_pushButton_4_clicked();
+
 private:
     Ui::BackWindow *ui;
 };
