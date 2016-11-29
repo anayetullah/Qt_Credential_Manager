@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    usr.name = "anayet";
+    usr.pass = "admin";
 }
 
 MainWindow::~MainWindow()
@@ -21,6 +23,18 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-    this->close();
-    b.show();
+    QString u = ui->unameEdit->text();
+    QString p = ui->passEdit->text();
+    if(u == usr.name && p == usr.pass )
+    {
+        b.show();
+        this->close();
+    }
+    else
+    {
+        ui->unameEdit->clear();
+        ui->passEdit->clear();
+        ui->mainWinLabel->setText("Wrong username or password \nTry again ... ");
+    }
+
 }

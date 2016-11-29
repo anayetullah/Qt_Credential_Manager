@@ -14,10 +14,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    backwindow.cpp
+    backwindow.cpp \
+    user.cpp \
+    accounts.cpp
 
 HEADERS  += mainwindow.h \
-    backwindow.h
+    backwindow.h \
+    user.h \
+    accounts.h
 
 FORMS    += mainwindow.ui \
     backwindow.ui

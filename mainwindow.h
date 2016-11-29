@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "backwindow.h"
+#include "user.h"
+#include "accounts.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +19,7 @@ public:
     ~MainWindow();
 
     BackWindow b;
+    User usr;
 
 private slots:
     void on_pushButton_2_clicked();
