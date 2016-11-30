@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     usr.name = "anayet";
     usr.pass = "admin";
+    ui->passEdit->setEchoMode(QLineEdit::Password);
 }
 
 MainWindow::~MainWindow()
